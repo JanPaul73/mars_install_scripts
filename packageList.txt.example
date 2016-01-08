@@ -16,8 +16,6 @@ urdfdom
 base-cmake
 base-types
 
-slam-envire_core
-
 lib_manager
 configmaps
 smurf_parser

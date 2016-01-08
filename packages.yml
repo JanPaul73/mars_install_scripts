@@ -34,16 +34,11 @@ minizip:
 
 base-types:
   path: rock
-  read_address: https://github.com/envire/base-types.git
-  #read_address: https://github.com/rock-core/base-types.git #original, should be switched back to that!
+  read_address: https://github.com/rock-core/base-types.git
 
 base-cmake:
   path: rock
   read_address: https://github.com/rock-core/base-cmake.git
-  
-slam-envire_core:
-  path: .
-  read_address: https://github.com/envire/slam-envire_core.git
 
 lib_manager:
   path: .

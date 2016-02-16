@@ -16,6 +16,7 @@ urdfdom
 base-cmake
 base-types
 
+envire-boost_serialization
 slam-envire_core
 
 lib_manager

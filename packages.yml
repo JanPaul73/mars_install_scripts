@@ -40,6 +40,10 @@ base-cmake:
   path: rock
   read_address: https://github.com/rock-core/base-cmake.git
   
+envire-boost_serialization:
+  path: .
+  read_address: https://github.com/envire/envire-boost_serialization.git
+
 slam-envire_core:
   path: .
   read_address: https://github.com/envire/slam-envire_core.git

@@ -1,6 +1,44 @@
  MARS Install Scripts
 ======================
 
+ ### (08.12.2015)
+
+This version also includes slam-envire_core.
+
+    To get slam-envire_core into MARS the necessary steps are:
+        Pull slam-envire_core to the newest master-commit.
+            Can be added into mars using the mars_install_scripts by
+                Adding
+                    slam-envire_core:
+                      path: .
+                      read_address: https://github.com/envire/slam-envire_core.git
+                        to packages.yml in mars_install_scripts
+                Adding
+                    slam-envire_core
+                        after
+                            base-cmake
+                            base-types
+                        before
+                            lib_manager
+                        to
+                            packageList.txt in mars_install_scripts
+        Change rock/base-types to the envire-fork https://github.com/envire/base-types/tree/new_body_state
+            Can be done by
+                changing the base-types entry in packages.yml in mars_install_scripts to:
+                    base-types:
+                      path: rock
+                      read_address: https://github.com/envire/base-types.git
+                      #read_address: https://github.com/rock-core/base-types.git #original, should be switched back to that!
+                checking out the branch "new_body_state" by executing:
+                    git checkout new_body_state
+                        in the rock/base-types folder
+        Then
+            ./mars.sh rebuild
+            and
+            ./mars.sh bootstrap
+            should do the rest.
+
+
  ### (25.08.2015)
 
 This repository contains scripts that will install
